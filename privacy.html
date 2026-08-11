@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Save Image as PDF – PNG, JPG, WebP</title>
+  <meta name="description" content="Privacy policy for the Save Image as PDF Chrome extension. No data collection, no uploads, no tracking. All image conversion happens locally.">
+  <style>
+    :root{
+      --bg:#f5f5f7; --card:#ffffff; --text:#1f2430; --muted:#5b6370;
+      --brand:#dc2626; --border:#e6e6ea; --code:#f0f0f3;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#14181f; --card:#1c212b; --text:#e5e7eb; --muted:#9aa3b2;
+        --brand:#f87171; --border:#2b313d; --code:#232a35; }
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+    .wrap{max-width:760px;margin:0 auto;padding:40px 20px 80px}
+    header{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+    .logo{width:40px;height:40px;border-radius:10px;background:var(--brand);
+      display:grid;place-items:center;color:#fff;font-weight:800;font-size:18px;flex:none}
+    h1{font-size:26px;margin:14px 0 4px}
+    h2{font-size:19px;margin:34px 0 10px;color:var(--brand)}
+    .meta{color:var(--muted);font-size:14px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;
+      padding:24px 26px;margin-top:22px}
+    p{margin:10px 0}
+    ul{margin:10px 0;padding-left:22px}
+    li{margin:6px 0}
+    code{background:var(--code);padding:2px 6px;border-radius:5px;font-size:14px}
+    .tldr{border-left:4px solid var(--brand);padding:12px 16px;background:var(--card);
+      border-radius:8px;margin:18px 0}
+    table{border-collapse:collapse;width:100%;margin-top:10px;font-size:15px}
+    th,td{border:1px solid var(--border);padding:9px 11px;text-align:left;vertical-align:top}
+    th{background:var(--code)}
+    a{color:var(--brand)}
+    footer{margin-top:40px;color:var(--muted);font-size:14px;text-align:center}
+    .nav{margin-top:8px}
+    .nav a{margin:0 8px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">PDF</div>
+      <div>
+        <strong>Save Image as PDF – PNG, JPG, WebP</strong><br>
+        <span class="meta">Chrome Extension</span>
+      </div>
+    </header>
+
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: 11 August 2026</p>
+
+    <div class="tldr">
+      <strong>In short:</strong> Save Image as PDF does not collect, store, sell, or
+      transmit any personal data. Every image conversion happens locally on your device.
+      There are no accounts, no analytics, and no third-party trackers.
+    </div>
+
+    <div class="card">
+      <h2>What we collect</h2>
+      <p><strong>Nothing.</strong> The extension does not collect or send any personal
+      or usage data to us or to any third party. We have no servers, no databases, and
+      no analytics.</p>
+
+      <h2>How your images are handled</h2>
+      <ul>
+        <li>When you choose to save or convert an image, the extension reads that
+          image's data <em>only</em> to produce the file you asked for (PDF, PNG, JPG,
+          WebP or BMP).</li>
+        <li>All conversion runs on your own device, inside your browser. Your images are
+          <strong>never uploaded</strong> to us or anyone else.</li>
+        <li>The only network request the extension makes is downloading the specific
+          image you selected, directly from the website that already hosts it — the same
+          request your browser would make to display it.</li>
+        <li>The finished file is handed to your browser's normal Downloads system and
+          saved to your device. We never see it.</li>
+      </ul>
+
+      <h2>Settings storage</h2>
+      <p>Your preferences (default format, PDF layout, filename template) are saved using
+      the browser's <code>chrome.storage.sync</code> API. This data stays within your own
+      browser/Google account sync and is never transmitted to us. You can clear it at any
+      time by removing the extension.</p>
+
+      <h2>Permissions and why they are needed</h2>
+      <table>
+        <tr><th>Permission</th><th>Purpose</th></tr>
+        <tr><td><code>contextMenus</code></td><td>Adds the right-click “Save image as…” menu.</td></tr>
+        <tr><td><code>downloads</code></td><td>Saves the converted file to your Downloads folder.</td></tr>
+        <tr><td><code>offscreen</code></td><td>Runs the local image/PDF conversion (needs a canvas).</td></tr>
+        <tr><td><code>storage</code></td><td>Remembers your settings.</td></tr>
+        <tr><td><code>scripting</code>, <code>activeTab</code></td><td>Shows the multi-select overlay and reads page-scoped images only when you act.</td></tr>
+        <tr><td><code>host permissions</code></td><td>Lets the extension download the bytes of the image you chose to save (images are often hosted on a different domain/CDN than the page). Used only for that image — for no other purpose.</td></tr>
+      </table>
+
+      <h2>Third parties</h2>
+      <p>The extension bundles the open-source <a href="https://github.com/parallax/jsPDF" target="_blank" rel="noopener">jsPDF</a>
+      library locally to build PDFs. It loads no remote code and contacts no third-party
+      services.</p>
+
+      <h2>Children’s privacy</h2>
+      <p>The extension is a general-purpose utility and does not knowingly collect any
+      information from anyone, including children.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If this policy changes, the “Last updated” date above will change accordingly.
+      Material changes will be reflected in the extension’s store listing.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about privacy? Email
+      <a href="mailto:surajtech007@gmail.com">surajtech007@gmail.com</a>.</p>
+    </div>
+
+    <footer>
+      <div class="nav">
+        <a href="support.html">Support</a> ·
+        <a href="https://buymeacoffee.com/imsurajsharma" target="_blank" rel="noopener">Buy me a coffee</a>
+      </div>
+      <p>© 2026 Save Image as PDF – PNG, JPG, WebP</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support & Help — Save Image as PDF – PNG, JPG, WebP</title>
+  <meta name="description" content="Help, FAQ and troubleshooting for the Save Image as PDF Chrome extension. Save or convert any image to PDF, PNG, JPG, WebP or BMP, and combine images into one PDF.">
+  <style>
+    :root{
+      --bg:#f5f5f7; --card:#ffffff; --text:#1f2430; --muted:#5b6370;
+      --brand:#dc2626; --border:#e6e6ea; --code:#f0f0f3; --bmc:#ffdd00; --bmc-text:#111;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#14181f; --card:#1c212b; --text:#e5e7eb; --muted:#9aa3b2;
+        --brand:#f87171; --border:#2b313d; --code:#232a35; }
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+    .wrap{max-width:800px;margin:0 auto;padding:40px 20px 80px}
+    header{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+    .logo{width:40px;height:40px;border-radius:10px;background:var(--brand);
+      display:grid;place-items:center;color:#fff;font-weight:800;font-size:18px;flex:none}
+    h1{font-size:28px;margin:16px 0 4px}
+    .sub{color:var(--muted);margin-top:0}
+    h2{font-size:20px;margin:32px 0 8px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;
+      padding:22px 24px;margin-top:18px}
+    ol{padding-left:22px}
+    li{margin:8px 0}
+    details{border:1px solid var(--border);border-radius:10px;padding:2px 16px;margin:10px 0;
+      background:var(--card)}
+    details[open]{padding-bottom:12px}
+    summary{cursor:pointer;font-weight:600;padding:12px 0;list-style:none}
+    summary::-webkit-details-marker{display:none}
+    summary::before{content:"＋";color:var(--brand);font-weight:800;margin-right:10px}
+    details[open] summary::before{content:"－"}
+    code{background:var(--code);padding:2px 6px;border-radius:5px;font-size:14px}
+    a{color:var(--brand)}
+    .bmc{display:inline-flex;align-items:center;gap:10px;background:var(--bmc);
+      color:var(--bmc-text);font-weight:700;text-decoration:none;padding:12px 20px;
+      border-radius:10px;margin-top:10px}
+    .bmc:hover{filter:brightness(.96)}
+    .center{text-align:center}
+    footer{margin-top:40px;color:var(--muted);font-size:14px;text-align:center}
+    .nav a{margin:0 8px}
+    .pill{display:inline-block;background:var(--code);border:1px solid var(--border);
+      border-radius:999px;padding:4px 12px;font-size:13px;margin:3px 4px 0 0}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">PDF</div>
+      <div><strong>Save Image as PDF – PNG, JPG, WebP</strong><br><span class="sub">Support &amp; Help</span></div>
+    </header>
+
+    <h1>Support &amp; Help</h1>
+    <p class="sub">Save or convert any image to PDF, PNG, JPG, WebP or BMP — and combine
+      several images into one PDF. Everything runs locally in your browser.</p>
+
+    <div>
+      <span class="pill">PDF</span><span class="pill">PNG</span><span class="pill">JPG</span>
+      <span class="pill">WebP</span><span class="pill">BMP</span>
+      <span class="pill">Multi-image → 1 PDF</span><span class="pill">No upload</span>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-top:6px">Quick start</h2>
+      <ol>
+        <li><strong>Save one image:</strong> right-click any image → <em>“Save image as…”</em>
+          → choose PDF, PNG, JPG, WebP or BMP.</li>
+        <li><strong>Combine images into one PDF:</strong> click the toolbar icon →
+          <em>“Combine images into one PDF”</em> → click the images you want → <em>Build PDF</em>.</li>
+        <li><strong>Grab every image on a page:</strong> toolbar icon →
+          <em>“Grab images on this page”</em> → <em>Select all</em> (or pick some) → <em>Save</em>.</li>
+        <li><strong>Adjust PDF layout:</strong> open <em>Settings</em> to set page size
+          (A4 / Letter / fit-to-image), orientation, margins, image placement and quality.</li>
+      </ol>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+
+    <details open>
+      <summary>How do I save an image as a PDF?</summary>
+      Right-click the image, choose <em>“Save image as…”</em>, then click <strong>PDF</strong>.
+      The PDF downloads instantly.
+    </details>
+
+    <details>
+      <summary>Can I put several images into one PDF?</summary>
+      Yes — this is the extension’s headline feature. Click the toolbar icon, choose
+      <em>“Combine images into one PDF”</em>, select the images on the page, and press
+      <em>Build PDF</em>. They become a single multi-page PDF.
+    </details>
+
+    <details>
+      <summary>My image looks blurry / pixelated in the PDF.</summary>
+      That happens when a small image is scaled up to fill the page. Open <em>Settings →
+      PDF layout → Image placement</em> and choose <strong>“Actual size (never enlarge)”</strong>.
+      Small images then keep their real, sharp size.
+    </details>
+
+    <details>
+      <summary>Why does BMP or a format save differently than expected?</summary>
+      BMP is written as a true 24-bit bitmap. If your browser can’t encode WebP, the file
+      falls back to PNG to guarantee you still get a valid image.
+    </details>
+
+    <details>
+      <summary>An image failed to save.</summary>
+      Some images are protected by the website’s login/session or a strict security policy
+      and can’t be fetched directly. Try opening the image in its own tab first, then
+      right-click and save. In batch mode, images that can’t be read are skipped.
+    </details>
+
+    <details>
+      <summary>Do you upload or see my images?</summary>
+      No. All conversion happens on your device. Nothing is uploaded and there is no
+      tracking. See the <a href="privacy.html">Privacy Policy</a>.
+    </details>
+
+    <details>
+      <summary>Where do the files go?</summary>
+      To your browser’s normal Downloads folder. Turn on <em>“Ask where to save each file”</em>
+      in Settings if you’d rather choose the location each time.
+    </details>
+
+    <div class="card center">
+      <h2 style="margin-top:6px">Still need help?</h2>
+      <p>Email <a href="mailto:surajtech007@gmail.com">surajtech007@gmail.com</a> and I’ll
+      get back to you. Bug reports and feature ideas are very welcome.</p>
+    </div>
+
+    <div class="card center">
+      <h2 style="margin-top:6px">Enjoying the extension?</h2>
+      <p>It’s free with no ads and no limits. If it saved you time, you can support
+      development with a coffee — thank you! ☕</p>
+      <a class="bmc" href="https://buymeacoffee.com/imsurajsharma" target="_blank" rel="noopener">
+        ☕ Buy me a coffee
+      </a>
+    </div>
+
+    <footer>
+      <div class="nav">
+        <a href="privacy.html">Privacy Policy</a> ·
+        <a href="https://buymeacoffee.com/imsurajsharma" target="_blank" rel="noopener">Buy me a coffee</a>
+      </div>
+      <p>© 2026 Save Image as PDF – PNG, JPG, WebP</p>
+    </footer>
+  </div>
+</body>
+</html>
